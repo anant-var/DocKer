@@ -58,8 +58,8 @@ docker network inspect bridge
 ```
 Expected Output:
 ```
- vidhi-database: 172.20.240.1
- vidhi-server-A: 172.20.240.2
+ anant-database: 172.20.240.1
+ anant-server-A: 172.20.240.2
 ```
 
 ---
