@@ -10,12 +10,12 @@ This experiment demonstrates how to use Docker **bind mounts** with a **Linux co
 ### 🏗 Step 1: Running a Container with a Bind Mount
 You executed:
 ```sh
-docker run -dit --name alpine_with_bind_mount -v C:\Users\asus\docker_data:/data alpine:latest sh
+docker run -dit --name alpine_with_bind_mount -v C:\Users\docker_data:/data alpine:latest sh
 ```
 #### 🔍 What Happened?
 - Since `alpine:latest` was not found locally, Docker pulled it from the official repository.
 - A new container named **alpine_with_bind_mount** was created.
-- The `-v` flag mounted the local directory `C:\Users\asus\docker_data` to `/data` inside the container.
+- The `-v` flag mounted the local directory `C:\Users\docker_data` to `/data` inside the container.
 - The container started a shell (`sh`) in detached mode.
 
 ---
@@ -23,12 +23,12 @@ docker run -dit --name alpine_with_bind_mount -v C:\Users\asus\docker_data:/data
 ### 📄 Step 2: Creating a File Inside the Bind Mount
 Inside the container, you created a file:
 ```sh
-docker exec -it alpine_with_bind_mount sh -c "echo 'Hello, Tarak!' > /data/testfile.txt"
+docker exec -it alpine_with_bind_mount sh -c "echo 'Hello, Anant!' > /data/testfile.txt"
 ```
 #### 🔍 What Happened?
 - The command executed a shell inside the running container.
 - It created a file `testfile.txt` inside `/data` and wrote **"Hello, Tarak!"** into it.
-- Since `/data` is a bind-mounted directory, the file was actually stored in `C:\Users\asus\docker_data` on the host.
+- Since `/data` is a bind-mounted directory, the file was actually stored in `C:\Users\docker_data` on the host.
 
 ---
 
@@ -59,11 +59,11 @@ docker rm -f alpine_with_bind_mount
 ### 🔄 Step 5: Creating a New Container with the Same Bind Mount
 You started a new container:
 ```sh
-docker run -dit --name new_alpine -v C:\Users\asus\docker_data:/data alpine sh
+docker run -dit --name new_alpine -v C:\Users\docker_data:/data alpine sh
 ```
 #### 🔍 What Happened?
 - A new container named **new_alpine** was created.
-- The same bind-mounted directory (`C:\Users\asus\docker_data`) was mounted to `/data`.
+- The same bind-mounted directory (`C:\Users\docker_data`) was mounted to `/data`.
 
 ---
 
@@ -74,7 +74,7 @@ docker exec -it new_alpine sh -c "cat /data/testfile.txt"
 ```
 #### 📌 Output:
 ```
-Hello, Tarak!
+Hello, Anant!
 ```
 This confirms that **bind mounts persist data even after a container is removed**. 🔥
 
