@@ -63,9 +63,9 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (name, email) VALUES
-('Alice Johnson', 'alice@example.com'),
-('Bob Smith', 'bob@example.com'),
-('Charlie Brown', 'charlie@example.com');
+('Anant', 'anant@example.com'),
+('Smith', 'smith@example.com'),
+('xero', 'xero@example.com');
 
 SELECT * FROM users;
 ```
