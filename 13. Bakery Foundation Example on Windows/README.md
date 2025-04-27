@@ -155,7 +155,7 @@ This will:
 1. Log in to [AWS Console](https://aws.amazon.com/console/).
 2. Navigate to **EC2 → AMIs** (Set the region you used when creating the AMI).
 3. Find the AMI named: `bakery-foundation-python39-timestamp`
-![img7](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/7.png)
+![img7](https://github.com/anant-var/DocKer/blob/main/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/7.png?raw=true)
 
 ### 4.2 Launch an EC2 Instance with Your AMI
 1. Go to **AWS EC2 Console**: [AWS EC2 Dashboard](https://console.aws.amazon.com/ec2/).
@@ -166,7 +166,7 @@ This will:
    - **Key Pair:** Use an existing key or create a new one.
    - **Security Group:** Allow **SSH (port 22)** and other required ports.
 5. Click **Launch! 🚀**
-![img8](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/8.png)
+![img8](https://github.com/anant-var/DocKer/blob/main/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/8.png?raw=true)
 
 ### 4.3 Connect to the Instance
 1. Get the Public IP from the EC2 Console.
