@@ -65,11 +65,11 @@ Expected Output:
 ---
 
 ## 📔 3. Testing Communication Between Containers
-### Ping from **vidhi-database** to **anant-server-A**
+### Ping from **anant-database** to **anant-server-A**
 ```bash
 docker exec -it anant-database ping 172.20.240.2
 ```
-### Ping from **vidhi-server-A** to **anant-database**
+### Ping from **anant-server-A** to **anant-database**
 ```bash
 docker exec -it anant-server-A ping 172.20.240.1
 ```
